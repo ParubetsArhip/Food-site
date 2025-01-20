@@ -1475,6 +1475,7 @@ body {
   width: 175.906px;
   height: 53.4px;
   border-radius: 12px;
+  background-color: #FAFAFA;
 }
 .purchases__right-top-choice p {
   color: #1A202C;
@@ -4891,6 +4892,7 @@ details[open] .custom-summary-mobil::after {
   border-radius: 16.892px;
   border: 2px solid #6C5FBC;
   margin-top: 74px;
+  background: #F9F9F9;
 }
 .contact__right-problem::-webkit-input-placeholder {
   color: #B6B6B6;
