@@ -1,0 +1,602 @@
+.signUp {
+    display: flex;
+    min-height: 100vh; /* Используйте min-height вместо height */
+    flex-direction: row; /* Чтобы элементы располагались рядом */
+    justify-content: center; /* Центрируем элементы по горизонтали */
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+}
+
+.signUp__left {
+    width: 50%;
+    min-height: 100vh; /* Теперь блок не ограничен фиксированной высотой */
+    background: #FFFFFF;
+    padding-top: 32px;
+    padding-bottom: 32px; /* Добавляем отступ снизу */
+}
+
+.signUp__left-logo {
+    cursor: pointer;
+    margin-left: 38px;
+}
+
+// signUp__left-container
+
+.signUp__left-container {
+    max-width: 681px;
+    margin: 0 auto;
+}
+
+.signUp__left-title {
+    color: #323142;
+    font-family: $font-poppins;
+    font-size: 35.25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: -1.41px;
+    text-align: center;
+    margin-top: 88px;
+}
+
+.signUp__left-options {
+    display: flex;
+    justify-content: center;
+    column-gap: 21px;
+    margin-top: 48px;
+
+    button {
+        width: 183.438px;
+        height: 63.37px;
+        border-radius: 13.341px;
+        background: #F5F5F5;
+        transition: background .5s ease;
+
+        &:hover{
+            background: #e9e7e7;
+        }
+    }
+}
+
+.signUp__left-or {
+    color: rgba(0, 90, 100, 0.35);
+    font-family: $font-poppins;
+    font-size: 20.011px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin-top: 33px;
+    text-align: center;
+}
+
+// -----------------------------------------------
+
+.signUp__left-inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+    row-gap: 24px;
+}
+
+
+
+
+.signUp__left-input{
+    position: relative;
+    display: inline-block;
+}
+
+.left-input{
+    padding-left: 30px;
+
+    width: 382.441px;
+    height: 74.487px;
+    // background: #f6f3f3;
+    background: #F5F5F5;
+    border-radius: 14px;
+
+    &::placeholder{
+        padding-left: 33px;
+        color: #C2C3CB;
+        font-family: $font-poppins;
+        font-size: 16.676px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.167px;
+        text-transform: uppercase;
+    }
+}
+
+.left-input-span{
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.left-input-img{
+    width: 20.567px;
+    height: 22.53px;
+}
+
+.signUp__left-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+    margin-top: 35px;
+}
+
+.signUp__left-input {
+    position: relative;
+    display: inline-block;
+
+    .left-input {
+        padding-left: 50px;
+        width: 382.441px;
+        height: 74.487px;
+        background: #f5f5f5;
+        border-radius: 14px;
+        border: 2px solid transparent;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #333;
+
+        &::placeholder {
+            color: #c2c3cb;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        &:focus {
+            background: #ffffff;
+            border-color: #6a5acd;
+            box-shadow: 0 0 10px rgba(106, 90, 205, 0.3);
+
+            &::placeholder {
+                color: #6a5acd;
+            }
+
+            +.left-input-span .left-input-img {
+                transform: rotate(360deg);
+                filter: hue-rotate(180deg);
+            }
+        }
+
+        &:not(:placeholder-shown) {
+            color: #6a5acd;
+            animation: textFadeIn 0.3s ease-in-out;
+        }
+    }
+
+    .left-input-span {
+        position: absolute;
+        left: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        transition: transform 0.3s ease-in-out;
+
+        .left-input-img {
+            width: 20.567px;
+            height: 22.53px;
+            transition: transform 0.3s ease-in-out, filter 0.3s;
+        }
+    }
+}
+
+/* Анимация плавного появления текста */
+@keyframes textFadeIn {
+    from {
+        color: transparent;
+    }
+
+    to {
+        color: #6a5acd;
+    }
+}
+
+// // Password ----------------
+
+.signUp__left-input-pas {
+    position: relative;
+    display: inline-block;
+
+    .password-input-pas {
+        padding-right: 50px; // Отступ для кнопки справа
+    }
+
+    .password-toggle-pas {
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+
+        .password-toggle-img-pas {
+            width: 21.679px;
+            height: 19.456px;
+            transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+
+            &:hover {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.signUp__left-inputs-pas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+    margin-top: 35px;
+}
+
+.signUp__left-input-pas {
+    position: relative;
+    display: inline-block;
+
+    .left-input-pas {
+        padding-left: 50px;
+        width: 382.441px;
+        height: 74.487px;
+        background: #f5f5f5;
+        border-radius: 14px;
+        border: 2px solid transparent;
+        outline: none;
+        transition: all 0.3s ease-in-out;
+        font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #333;
+
+        &::placeholder {
+            color: #c2c3cb;
+            font-size: 16px;
+            transition: color 0.3s ease-in-out;
+            padding-left: 35px;
+        }
+
+        &:focus {
+            background: #ffffff;
+            border-color: #6a5acd;
+            box-shadow: 0 0 10px rgba(106, 90, 205, 0.3);
+
+            &::placeholder {
+                color: #6a5acd;
+            }
+
+            +.left-input-span-pas .left-input-img-pas {
+                transform: rotate(360deg);
+                filter: hue-rotate(180deg);
+            }
+        }
+
+        &:not(:placeholder-shown) {
+            color: #6a5acd;
+            animation: textFadeIn 0.3s ease-in-out;
+        }
+    }
+
+    .left-input-span-pas {
+        position: absolute;
+        left: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        transition: transform 0.3s ease-in-out;
+
+        .left-input-img-pas {
+            width: 20.567px;
+            height: 22.53px;
+            transition: transform 0.3s ease-in-out, filter 0.3s;
+        }
+    }
+}
+
+//--------------
+
+.signUp__left-button {
+    display: flex;
+    justify-content: center;
+
+    button {
+        width: 382.441px;
+        height: 74.487px;
+        border-radius: 15.564px;
+        background: $text-violet-light;
+        color: #f3f5f6;
+        font-family: $font-poppins;
+        font-size: 17.788px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: 38px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: background .5s ease;
+
+        &:hover {
+            background: #7b6fff;
+        }
+    }
+}
+
+.signUp__left-logIn{
+    color: #3E3E3E;
+    font-family: $font-poppins;
+    font-size: 18.9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.189px;
+    text-align: center;
+    margin-top: 23px;
+
+    span{
+        color: $text-violet-light;
+        font-size: 18.9px;
+        font-weight: 700;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.signUp__left-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 91px;
+    padding: 0 15px;
+    // margin-bottom: 48px;
+
+    p{
+        color: #718096;
+        text-align: right;
+        font-family: $font-poppins;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        letter-spacing: 0.2px;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.signUp__right {
+    width: 50%;
+    min-height: 100vh; /* Обеспечиваем гибкость и для правого блока */
+    background: $text-violet-light;
+    padding-bottom: 32px; /* Отступ снизу */
+    overflow-x: hidden;
+}
+
+.signUp__right-container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.signUp__right-img{
+    // margin-top: 249px;
+    margin-top: 25%;
+}
+
+.signUp__right-title{
+    color: #FFFFFF;
+    text-align: center;
+    font-family: $font-manrope;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;
+    margin-top: 78px;
+}
+
+.signUp__left-text{
+    color: #FFFFFF;
+    text-align: center;
+    font-family: $font-manrope;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.2px;
+    margin-top: 20px;
+}
+
+.signUp__left-dots{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    margin-top: 37px;
+    margin-bottom: 131px;
+}
+
+@media only screen and (max-width: 1400px){
+    .signUp__right{
+        display: none;
+    }
+
+    .signUp__left{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    // .signUp__left-container{
+    //     max-width: 308px;
+    // }
+
+    .signUp__left-logo{
+        img{
+            width: 111px;
+            height: 42px;
+        }
+    }
+
+    .signUp__left-title {
+        font-size: 28px;
+        margin-top: 70px;
+    }
+
+    .signUp__left-options {
+        column-gap: 17px;
+        margin-top: 38px;
+    
+        button {
+            width: 147.98px;
+            height: 51.12px;
+
+            img{
+                width: 21px;
+                height: 35px;
+            }
+        }
+    }
+
+    .signUp__left-or{
+        margin-top: 26px;
+        font-size: 16px;
+    }
+
+    .signUp__left-inputs{
+        row-gap: 19px;
+        margin-top: 28px;
+    }
+
+    .signUp__left-input{
+        position: relative;
+        display: inline-block;
+    }
+    
+    
+    .left-input-span{
+        position: absolute;
+        left: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+    .left-input-img{
+        width: 20.567px;
+        height: 22.53px;
+    }
+    
+    .signUp__left-inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 24px;
+        margin-top: 35px;
+    }
+    
+    .signUp__left-input {
+    
+        .left-input {
+            padding-left: 27px;
+            width: 308.516px;
+            height: 60.089px;
+            font-size: 13px;
+    
+            &::placeholder {
+                font-size: 13px;
+            }
+        }
+    
+        .left-input-span {
+            left: 19px;
+    
+            .left-input-img {
+                width: 16.592px;
+                height: 18.175px;
+            }
+        }
+    }
+
+    .signUp__left-input-pas {
+    
+        .password-toggle-pas {
+            right: 24px;
+    
+            .password-toggle-img-pas {
+                width: 17.489px;
+                height: 15.695px;
+            }
+        }
+    }
+    
+    .signUp__left-inputs-pas {
+        margin-top: 19px;
+    }
+    
+    .signUp__left-input-pas {
+    
+        .left-input-pas {
+            padding-left: 30px;
+            width: 308.516px;
+            height: 60.089px;
+            font-size: 13px;
+    
+            &::placeholder {
+                font-size: 13px;
+                padding-left: 30px;
+            }
+    
+        }
+    
+        .left-input-span-pas {
+            left: 19px;
+    
+            .left-input-img-pas {
+                width: 14.808px;
+                height: 19.132px;
+            }
+        }
+    }
+
+    .signUp__left-button {
+    
+        button {
+            width: 308.516px;
+            height: 60.089px;
+
+            font-size: 14px;
+            margin-top: 31px;
+        }
+    }
+    
+    .signUp__left-logIn{
+        font-size: 15px;
+        margin-top: 18px;
+    
+        span{
+            font-size: 15px;
+        }
+    }
+    
+    .signUp__left-bottom{
+        margin-top: 100px;
+        padding: 0 15px;
+    
+        p{
+            font-size: 14px;
+        }
+    }
+}

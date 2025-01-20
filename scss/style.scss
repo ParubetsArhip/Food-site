@@ -1,0 +1,41 @@
+// Base
+@import './base/reset';
+@import './base/vars';
+@import './base/templates';
+@import './base/mixins';
+@import './base/base';
+
+// Bloks
+
+// Menu
+@import './blocks/PageMenu/header';
+@import './blocks/PageMenu/phone';
+@import './blocks/PageMenu/restaurants';
+@import './blocks/PageMenu/dishes';
+@import './blocks/PageMenu/purchases';
+@import './blocks/PageMenu/lists';
+@import './blocks/PageMenu/get';
+@import './blocks/PageMenu/scroll';
+@import './blocks/PageMenu/footer';
+
+// Blog
+@import './blocks/PageBlog/articles';
+@import './blocks/PageBlog/perperzon';
+@import './blocks/PageBlog/restaurants_and_menus';
+
+// Pricing
+@import './blocks/PagePricing/map';
+@import './blocks/PagePricing/purchase';
+@import './blocks/PagePricing/subscription';
+
+// Article
+@import './blocks/PageArticle/article';
+
+// Contact
+@import './blocks/PageContact/contact';
+
+// Sign-Up
+@import './blocks/PageSignUp/sign-up';
+
+// Sign-In
+@import './blocks/PageSignIn/sign-in';

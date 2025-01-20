@@ -1,0 +1,154 @@
+.lists{
+    margin: 104px 0 164px 0;
+    // margin: 104px 0 0 0;
+    user-select: none;
+}
+
+.lists__title{
+    color: $color-text-lists;
+    text-align: center;
+    margin: 0 auto;
+    font-family: Poppins;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    width: 408px;
+    margin-bottom: 114px;
+
+    span{
+        color: $text-violet-light;
+    }
+}
+
+.custom-details {
+    border-bottom: 1.058px solid $color-lists;
+    // border-radius: 5px;
+    padding: 10px;
+    // background-color: #f9f9f9;
+    width: 100%;
+    // margin: 10px 0;
+    margin: 0 auto;
+}
+
+.custom-summary {
+    font-family: $font-poppins;
+    font-size: 23.417px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 59.24px; /* 252.982% */
+    cursor: pointer;
+    list-style: none;
+    padding: 5px;
+    // margin: 0;
+    color: $color-text-lists;
+
+    position: relative;
+}
+
+// .custom-summary:hover {
+//     color: #007BFF; /* Цвет при наведении */
+// }
+
+.custom-content {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: $color-text-lists-2;
+    width: 777.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 32px */
+    letter-spacing: 0.2px;
+}
+
+/* Убираем стандартный треугольник */
+.custom-summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Добавляем кастомный значок */
+.custom-summary::after {
+    // content: "▼"; /* Состояние закрытого */
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 30.12px;
+    height: 30.12px;
+    // background-image: url('./../../../images/icon/plus-blue.svg');
+    background: url('../images/icon/plus-blue.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+details[open] .custom-summary::after {
+    // content: "▲"; /* Состояние открытого */
+    // background-image: url('./../../../images/icon/minus-blue.svg');
+    background: url('../images/icon/minus-blue.svg');
+}
+
+@media only screen and (max-width: 1300px){
+    .lists__title{
+        font-size: 32px;
+        margin-bottom: 81px;
+    }
+
+    .custom-details{
+        width: 819px;
+        padding: 5px;
+    }
+
+    .custom-summary {
+        font-size: 16px;
+    }
+    
+    .custom-content {
+        font-size: 14px;
+        width: 572px;
+        margin-top: 1px;
+        margin-bottom: 20px;
+    }
+
+    .custom-summary::after{
+        width: 21.419px;
+        height: 21.419px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .lists__title{
+        font-size: 23px;
+        margin-bottom: 67px;
+        width: 215px;
+    }
+
+    .custom-details{
+        width: 315px;
+        padding: .1px;
+    }
+
+    .custom-summary {
+        font-size: 12px;
+    }
+    
+    .custom-content {
+        font-size: 11px;
+        width: 220px;
+        margin-top: 1px;
+        margin-bottom: 20px;
+    }
+
+    .custom-summary::after{
+        width: 15.822px;
+        height: 15.822px;
+    }
+}
+
+

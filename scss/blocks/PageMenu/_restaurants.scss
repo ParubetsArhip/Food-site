@@ -1,0 +1,210 @@
+.restaurants__top-title{
+    @extend %title-2;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 85px;
+    text-align: center;
+    margin: 100px 0 85px 0;
+
+    span{
+        color: $text-violet-light;
+    }
+}
+
+.restaurants__bottom{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.restaurants__bottom-card{
+    position: relative;
+    width: 395px;
+    height: 297px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 5.946px 71.348px 35.674px 0px rgba(229, 229, 229, 0.70);
+}
+
+.restaurants__bottom-img{
+    position: absolute;
+    width: 395px;
+    height: 176px;
+    // background: url('https://hips.hearstapps.com/hmg-prod/images/fennel-roasted-chicken-and-peppers-1641421056.jpg');
+    // background: url('./../../../images/food-1.jpg');
+    background: url('../images/food-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.restaurants__bottom-button-yellow{
+    @extend %restaurants__button-yellow;
+    position: absolute;
+    width: 65px;
+    height: 24px;
+
+    top: 190px;
+    left: 32px;
+    // margin: 190px 0 0 32px;
+}
+
+.restaurants__bottom-text{
+    @extend %restaurants__text;
+    position: absolute;
+    font-size: 25px;
+
+    top: 215px;
+    left: 32px;
+    // margin: 215px 0 0 32px;
+}
+
+.restaurants__bottom-arrow{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    column-gap: 6.45px;
+
+    top: 247px;
+    left: 32px;
+    // margin: 247px 0 0 32px;
+
+    p{
+        @extend %restaurants__bottom-p;
+        line-height: 25.786px;
+        font-size: 19px;
+    }
+}
+
+.restaurants__bottom-bookmark{
+    padding-left: 156px;
+}
+
+.restaurants__bottom-img-2{
+    position: absolute;
+    width: 395px;
+    height: 176px;
+    // background: url('./../../../images/food-2.jpg');
+    background: url('../images/food-2.jpg');
+    // background: url('https://cdn.galleries.smcloud.net/t/galleries/gf-rCcD-76A4-dKdJ_wzielismy-pod-lupe-znane-sieciowki-fast-foodowe-te-burgery-maja-najmniej-kalorii-1920x1080-nocrop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.restaurants__bottom-button-red{
+    @extend %restaurants__button-red;
+    position: absolute;
+    width: 65px;
+    height: 24px;
+
+    top: 190px;
+    left: 32px;
+    // margin: 190px 0 0 32px;
+}
+
+.restaurants__bottom-bookmark-2{
+    display: none;
+}
+
+@media only screen and (max-width: 1300px){
+    .restaurants__bottom-card{
+        width: 281px;
+        height: 211px;
+        justify-content: center;
+    }
+
+    .restaurants__bottom-img, .restaurants__bottom-img-2{
+        width: 281px;
+        height: 125px;
+    }
+
+    .restaurants__bottom-button-yellow, .restaurants__bottom-button-red{
+        width: 46px;
+        height: 17px;
+        font-size: 9px;
+
+        top: 135px;
+        left: 25px;
+        // margin: 135px 0 0 25px;
+    }
+
+    .restaurants__bottom-text{
+        font-size: 18px;
+
+        top: 148px;
+        left: 25px;
+        // margin: 148px 0 0 25px;
+    }
+
+    .restaurants__bottom-arrow{
+        position: absolute;
+        align-items: center;
+        display: flex;
+        column-gap: 6.45px;
+
+        width: 64px;
+        height: 18px;
+
+        top: 184px;
+        left: 25px;
+        // margin: 180px 0 0 32px;
+    
+        p{
+            @extend %restaurants__bottom-p;
+            align-items: center;
+            line-height: 18px;
+            font-size: 13px;
+        }
+    }
+
+    .restaurants__bottom-bookmark{
+        display: none;
+    }
+
+    .restaurants__bottom-bookmark-2{
+        padding: 0 0 20px 105px;
+    }
+
+    .restaurants__top-title{
+        margin: 71px 0 60px 0;
+        font-size: 32px;
+    }
+
+    .restaurants__bottom-bookmark-2{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 990px){
+    .restaurants__top-title{
+        margin: 84px 0 59px 0;
+        font-size: 30px;
+        line-height: 120%;
+    }
+
+    .restaurants__bottom{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .restaurants__bottom-card{
+        margin: 0 auto;
+    }
+}
+
+.restaurants__bottom-line{
+    width: 100%2;
+    height: 1px;
+    background-color: $color-line;
+    margin-top: 231px;
+}
+

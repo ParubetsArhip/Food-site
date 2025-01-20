@@ -1,0 +1,212 @@
+.get{
+    margin-bottom: 216px;
+}
+
+.get__block{
+    position: relative;
+    width: 1214px;
+    height: 280px;
+    background: $text-violet-light;
+    border-radius: 30px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.get__block-bg{
+    position: absolute;
+    // width: 870px;
+    // height: 288px;
+    background: url('../images/get50.png');
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // background-position: center;
+}
+
+.get__block-content{
+    padding: 37px 72px 61px 93px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.get__block-left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 9px;
+
+    p{
+        color: #FFFFFF;
+        font-family: $font-poppins;
+        font-size: 70px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+}
+
+.get__block-input{
+    position: relative;
+    font-family: $font-poppins;
+
+    input{
+        width: 439.733px;
+        height: 68px;
+        background: $color-get50;
+        border-radius: 14px;
+        box-shadow: 0px 7.253px 45.333px 0px rgba(0, 0, 0, 0.10);
+
+        &::placeholder{
+            color: #878787;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.488px;
+            text-transform: capitalize;
+            padding-left: 21px;
+        }
+    }
+
+    button{
+        position: absolute;
+        width: 132.373px;
+        height: 53.443px;
+        background: $text-violet-light;
+        border-radius: 11px;
+        color: #F7F8FA;
+        font-size: 14.752px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.443px;
+        text-transform: uppercase;
+        top: 8px;
+        left: 301px;
+        transition: background .5s ease;
+
+        &:hover{
+            background: #5e52a7;
+        }
+    }
+}
+
+.get__block-right{
+    padding-top: 30px;
+}
+
+@media only screen and (max-width: 1350px){
+    .get{
+        margin-bottom: 153px;
+    }
+    
+    .get__block{
+        width: 863.289px;
+        height: 199.111px;
+    }
+    
+    .get__block-content{
+        padding: 26px 51px 43px 46px;
+    }
+    
+    .get__block-left{
+        row-gap: 6px;
+    
+        p{
+            font-size: 49px;
+        }
+    }
+    
+    .get__block-input{
+        position: relative;
+        font-family: $font-poppins;
+    
+        input{
+            width: 312.699px;
+            height: 48.356px;
+    
+            &::placeholder{
+                font-size: 11px;
+                padding-left: 15px;
+            }
+        }
+    
+        button{
+            position: absolute;
+            width: 94.132px;
+            height: 38.004px;
+            top: 5px;
+            left: 214px;
+            font-size: 10px;
+            font-weight: 500;
+        }
+    }
+    
+    .get__block-right{
+        padding-top: 30px;
+
+        img{
+            width: 194.885px;
+            height: 196.277px;
+        }
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .get{
+        margin-bottom: 95px;
+    }
+    
+    .get__block{
+        width: 315px;
+        height: 256.974px;
+    }
+    
+    .get__block-content{
+        padding: 35px 27px 0 27px;
+        flex-direction: column;
+    }
+    
+    .get__block-left{
+        row-gap: 16px;
+    
+        p{
+            font-size: 41px;
+            margin: 0 auto;
+        }
+    }
+    
+    .get__block-input{
+        position: relative;
+        font-family: $font-poppins;
+    
+        input{
+            width: 260.289px;
+            height: 48.079px;
+    
+            &::placeholder{
+                font-size: 10px;
+                padding-left: 14px;
+            }
+        }
+    
+        button{
+            position: absolute;
+            width: 86.091px;
+            height: 34.757px;
+            top: 7px;
+            left: 166px;
+            font-size: 9px;
+        }
+    }
+    
+    .get__block-right{
+        padding-top: 30px;
+        margin: 0 auto;
+
+        img{
+            width: 169.448px;
+            height: 170.658px;
+        }
+    }
+}

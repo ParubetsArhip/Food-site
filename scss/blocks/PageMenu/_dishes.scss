@@ -1,0 +1,153 @@
+.container-dishes{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.dishes__top-title{
+    @extend %title-2;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 600;
+    margin: 100px 0 75px 0;
+
+    span{
+        color: $text-violet-light;
+    }
+}
+
+.dishes__bottom{
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.dishes__bottom-card{
+    position: relative;
+    width: 224px;
+    height: 390px;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 5.946px 71.348px 35.674px 0px rgba(229, 229, 229, 0.70);
+}
+
+// .dishes__bottom-img{
+//     position: absolute;
+//     width: 201px;
+//     height: 208px;
+//     background: url('../../images/icon/food-3.svg') -9.794px -0.586px / 104.869% 100.563% no-repeat;
+//     top: 0;
+//     left: 15px;
+//     right: 0;
+// }
+
+.dishes__bottom-img{
+    position: absolute;
+    width: 201px;
+    height: 208px;
+    top: 24px;
+    left: 8px;
+    right: 0;
+}
+
+.dishes__bottom-button-yellow{
+    @extend %restaurants__button-yellow;
+    position: absolute;
+    width: 58.896px;
+    height: 22.207px;
+    top: 220px;
+    left: 21px;
+    font-size: 11px;
+    // margin: 190px 0 0 32px;
+}
+
+.dishes__bottom-text{
+    @extend %restaurants__text;
+    position: absolute;
+    font-size: 23px;
+
+    top: 245px;
+    left: 21px;
+    // margin: 215px 0 0 32px;
+}
+
+.dishes__bottom-arrow{
+    position: absolute;
+    align-items: center;
+    display: flex;
+    column-gap: 5.75px;
+
+    top: 285px;
+    left: 21px;
+    // margin: 247px 0 0 32px;
+
+    p{
+        @extend %restaurants__bottom-p;
+        line-height: 25.786px;
+        font-size: 17px;
+    }
+}
+
+.dishes__bottom-price{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+    top: 325px;
+    left: 21px;
+
+    p{
+        font-family: $font-manrope;
+        color: #323142;
+        font-size: 25.936px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40.345px;
+
+        span{
+            color: #8E97A6;
+            font-size: 18px;
+        }
+    }
+
+    img{
+        cursor: pointer;
+    }
+}
+
+.dishes__bottom-heart{
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    cursor: pointer;
+}
+
+.dishes__bottom-img-1{
+    position: absolute;
+    width: 201px;
+    height: 208px;
+    top: 24px;
+    left: 8px;
+    right: 0;
+}
+
+.dishes__bottom-button-red{
+    @extend %restaurants__button-red;
+    position: absolute;
+    width: 58.896px;
+    height: 22.207px;
+    top: 220px;
+    left: 21px;
+    font-size: 11px;
+}
+
+.dishes__bottom-line{
+    width: 100%;
+    height: 1px;
+    background-color: $color-line;
+    margin-top: 232px;
+}

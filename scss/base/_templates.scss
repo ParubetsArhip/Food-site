@@ -1,0 +1,186 @@
+%button-violet{
+    font-family: $font-poppins;
+    color: white;
+    background-color: $text-violet-light;
+    // width: 156px;
+    // height: 59px;
+    border-radius: 12px;
+    font-size: 16.271px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.163px;
+    text-transform: capitalize;
+    transition: background-color .5s ease;
+}
+
+%title-2{
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58.198px; /* 114.286% */
+    text-transform: capitalize;
+    color: #18181B;
+}
+
+%text-under-title-2{
+    font-family: $font-inter;
+    color: $color-67;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30.502px; /* 150% */
+}
+
+// Restaurants ---------------------------
+
+%restaurants__button-yellow{
+    font-family: $font-poppins;
+    // width: 65px;
+    // height: 24px;
+    background-color: #F7EDD0;
+    color: #DAA31A;
+    border-radius: 5px;
+}
+
+%restaurants__button-red{
+    font-family: $font-poppins;
+    // width: 65px;
+    // height: 24px;
+    background-color: #F7C5BA;
+    color: #FB471D;
+    border-radius: 5px;
+}
+
+%restaurants__text{
+    font-family: $font-poppins;
+    color: #323142;
+    // font-size: 25.786px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 41.903px;
+}
+
+%restaurants__bottom-p{
+    font-family: $font-manrope;
+    color: #8E97A6;
+    // font-size: 19.34px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+// Page-Blog
+
+%girl-text-title{
+    color: #252525;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 600;
+    // line-height: 17.906px;
+}
+
+%girl-text-top{
+    font-family: $font-poppins;
+    color: #8D8D8D;
+    font-style: normal;
+    font-weight: 400;
+    // line-height: normal;
+}
+
+%girl-text-bottom{
+    color: #000000;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 500;
+    // line-height: 33.352px;
+}
+
+%girl-text-data{
+    color: #B7B4B4;
+    font-family: $font-poppins;
+    font-style: normal;
+    font-weight: 500;
+    // line-height: 22.32px; /* 197.965% */
+}
+
+
+// restaurants and menus
+
+%left-title{
+    font-family: $font-poppins;
+    color: #252525;
+    font-style: normal;
+    font-weight: 600;
+    // line-height: 44.549px; /* 134.997% */
+    text-transform: capitalize;
+    font-size: 33px;
+}
+
+%left-text{
+    color: #252525;
+    font-family: $font-poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    // line-height: 44.549px; /* 202.496% */
+}
+
+
+// Apply-Price
+%prict-text-gray{
+    font-family: $font-poppins;
+    color: #323142;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117.5%;
+    letter-spacing: -0.4px;
+    opacity: 0.7;
+}
+
+%total-text{
+    font-family: $font-poppins;
+    color: #323142;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 117.5%; /* 29.375px */
+    letter-spacing: -0.5px;
+}
+
+
+// subscription-top----------------------------------
+
+%subscription-top-title{
+    font-family: $font-poppins;
+    color: #282828;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -1px;
+}
+
+%subscription-top-text{
+    font-family: $font-inter;
+    color: #6E757C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+%subscription-btn{
+    font-family: $font-poppins;
+    width: 146px;
+    height: 58.944px;
+    background: $text-violet-light;
+    color: #F9F9F9;
+    font-size: 16.271px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.488px;
+    text-transform: uppercase;
+    border-radius: 12px;
+}

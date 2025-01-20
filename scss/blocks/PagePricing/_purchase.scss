@@ -1,0 +1,352 @@
+.purchase {
+    margin-top: -198px;
+    // margin: 0 auto;
+}
+
+.purchase__container {
+    max-width: 711px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.purchase__two-foods {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.food__block-1 {
+    width: 681px;
+    height: 109px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.food__elements {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 57px 1.71px 2px;
+}
+
+.food__elements-left {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+}
+
+.food__elements-texts {
+    font-family: $font-poppins;
+    color: $color-text-lists;
+
+    span {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+    }
+
+    p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+    }
+}
+
+.food__elements-right {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+
+    span {
+        font-family: $font-poppins;
+        font-size: 15.954px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+        display: flex;
+        justify-content: center;
+    }
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.apply {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    margin-top: 89px;
+}
+
+.apply__input {
+    width: 541px;
+    height: 70px;
+    background-color: #F1F1F1;
+    border-radius: 10px;
+}
+
+.apply__input-elements {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    padding: 24px 0 24px 21px;
+
+    p {
+        font-family: $font-poppins;
+        color: #C2C3CB;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 117.5% // letter-spacing: -0.36px;
+    }
+}
+
+.apply__button {
+    button {
+        font-family: $font-poppins;
+        color: #F3F5F6;
+        width: 132px;
+        height: 70px;
+        border-radius: 12px;
+        background-color: $text-violet-light;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 117.5%;
+        letter-spacing: -0.36px;
+        transition: background-color .3s ease;
+
+        &:hover {
+            background-color: #6459af;
+        }
+    }
+}
+
+.price {
+    margin-top: 52px;
+}
+
+.price__elements {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    // width: 100%;
+    width: 680px;
+    padding-bottom: 13px;
+    border-bottom: 2px dashed #ACADB9;
+}
+
+.subtotal__text {
+    @extend %prict-text-gray;
+}
+
+.subtotal__price {
+    @extend %prict-text-gray;
+}
+
+.total {
+    margin-top: 28px;
+    display: flex;
+    justify-content: space-between;
+    width: 680px;
+}
+
+.text__total {
+    @extend %total-text;
+}
+
+.total__price {
+    @extend %total-text;
+}
+
+
+.purchase__button {
+    margin-top: 62px;
+
+    button {
+        width: 681px;
+        height: 77px;
+        background-color: $text-violet-light;
+        border-radius: 12px;
+        font-family: $font-poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: -0.2px;
+        color: #FFF3EB;
+        transition: background-color .3s ease;
+
+        &:hover {
+            background-color: #6459af;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .purchase__two-foods {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .food__block-1 {
+        width: 315.615px;
+        height: 66.117px;
+    }
+
+    .food__elements {
+        padding: 3.3px 16px 1.40px 7px;
+    }
+
+    .food__elements-left {
+        column-gap: 8px;
+
+        img {
+            width: 59.244px;
+            height: 61.401px;
+        }
+    }
+
+    .food__elements-texts {
+
+        span {
+            font-size: 13px;
+        }
+
+        p {
+            font-size: 10px;
+        }
+    }
+
+    .food__elements-right {
+        row-gap: 5px;
+
+        span {
+            font-size: 9px;
+        }
+
+        img {
+            width: 63.646px;
+            height: 18.931px;
+        }
+    }
+
+    .apply {
+        column-gap: 11px;
+        margin-top: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apply__input {
+        width: 223.3px;
+        height: 42.415px;
+    }
+
+    .apply__input-elements {
+        column-gap: 8px;
+        padding: 14px 0 14px 12px;
+
+        p {
+            font-size: 10px;
+        }
+
+        img {
+            width: 13.064px;
+            height: 17.998px;
+        }
+    }
+
+    .apply__button {
+        button {
+            width: 79.221px;
+            height: 42.011px;
+            font-size: 10px;
+        }
+    }
+
+    .price {
+        margin-top: 62px;
+    }
+
+    .price__elements {
+        row-gap: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .subtotal__text {
+        font-size: 12px
+    }
+
+    .subtotal__price {
+        font-size: 12px;
+    }
+
+    .subtotal {
+        padding-bottom: 7px;
+        width: 314px;
+    }
+
+    .total {
+        padding-top: 17px;
+        width: 314px;
+        margin: 0 auto;
+    }
+
+    .text__total {
+        font-size: 15px;
+    }
+
+    .total__price {
+        font-size: 15px;
+    }
+
+    .purchase__button {
+        margin-top: 51px;
+        display: flex;
+        justify-content: center;
+
+        button {
+            width: 314.367px;
+            height: 46.157px;
+            font-size: 12px;
+        }
+    }
+}
+
+.container__our-pricing {
+    display: flex; /* Flexbox для центрирования */
+    justify-content: center; /* Горизонтальное центрирование */
+    align-items: center; /* Вертикальное центрирование, если нужно */
+    margin-top: 200px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .our_pricing {
+        width: 887px;
+        height: 585px;
+    }
+}
+
+@media only screen and (max-width: 940px) {
+    .our_pricing {
+        width: 484px;
+        height: 406px;
+        overflow-x: hidden;
+    }
+}
+
+

@@ -1,0 +1,351 @@
+.map{
+    margin-top: 56px;
+}
+
+.map__elements{
+    position: relative;
+}
+
+.map__photo{
+    width: 100%;
+    height: 733px;
+    z-index: -50;
+}
+
+.map__block-food{
+    position: absolute;
+    width: 119.127px;
+    height: 49.204px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    // left: 360px;
+    left: 28%;
+    bottom: 1150px;
+    // z-index: 50;
+}
+
+.map__block-elements{
+    padding: 9px 0 0 4px;
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.map__block-img{
+    width: 32px;
+    height: 33px;
+}
+
+.map__block-texts{
+    display: flex;
+    flex-direction: column;
+
+    span:first-child{
+        @extend %girl-text-title;
+        font-size: 9px;
+    }
+
+    span:last-child{
+        @extend %girl-text-top;
+        font-size: 5.775px;
+    }
+}
+
+.map__block-line-and-dot{
+    width: 254.5px;
+    height: 255.678px;
+    position: relative;
+    left: 32.8%;
+    bottom: 587px;
+}
+
+.map__block-dot{
+    position: absolute;
+    left: -5px;
+    top: 8px;
+}
+
+.map__block-label{
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    z-index: 2;
+}
+
+.map__block-text{
+    position: absolute;
+    width: 167px;
+    height: 58px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    left: 28%;
+    bottom: 915px;
+    z-index: 1;
+
+    p{
+        font-family: $font-poppins;
+        font-size: 10px;
+        color: #ACADB9;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+        padding: 15px 33px;
+        width: 243px;
+    }
+}
+
+
+
+// David-Block
+
+.map__block-david{
+    position: relative;
+    bottom: 430px;
+    width: 451.343px;
+    height: 308.331px;
+    background-color: #FFFFFF;
+    border-radius: 24px;
+    margin: 0 auto;
+}
+
+.david__top-black{
+    background-color: $color-text-lists;
+    height: 107px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.david__content{
+    display: flex;
+    align-items: center;
+    column-gap: 21px;
+    padding: 21px 213px 27px 19px;
+}
+
+.david__content-img{
+    border-radius: 15px;
+}
+
+.david__content-texts{
+    font-family: $font-poppins;
+
+    span:first-child{
+        color: #F3F5F6;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; 
+        width: 136px;
+    }
+
+    span:last-child{
+        color: #ACADB9;
+        font-size: 15.745px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 22.042px */
+    }
+}
+
+.container__time{
+    max-width: 411px;
+    margin: 0 auto;
+}
+
+.time__text{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    padding-top: 31px;
+}
+
+.fuul_text{
+    font-family: $font-poppins;
+    display: flex;
+    flex-direction: column;
+    row-gap: 29px;
+}
+
+.fuul_text-top{
+    span{
+        color: #ACADB9;
+        font-size: 11.703px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 16.385px */
+    }
+
+    p{
+        color: #323142;
+        font-size: 13.015px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        width: 161px;
+    }
+}
+
+.fuul_text-bottom{
+    span{
+        color: #ACADB9;
+        font-size: 11.703px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 16.385px */
+    }
+
+    p{
+        color: #323142;
+        font-size: 13.015px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+}
+
+.time__button{
+    position: relative;
+    font-family: $font-poppins;
+    color: #FFFFFF;
+    width: 131.204px;
+    height: 41.985px;
+    background-color: $text-violet-light;
+    border-radius: 4px;
+    font-size: 15.64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    top: 38px;
+    transition: background-color .5s ease;
+
+    &:hover{
+        background-color: #6156a9;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .map__block-line-and-dot{
+        left: 39%;
+    }
+}
+
+@media only screen and (max-width: 490px){
+    .map__block-line-and-dot{
+        left: 44%;
+    }
+}
+
+
+@media only screen and (max-width: 490px){
+    .map__block-line-and-dot{
+        width: 158px;
+        height: 159px;
+        position: relative;
+        left: 30%;
+        bottom: 587px;
+    }
+
+    .map__block-label{
+        position: absolute;
+        left: 0;
+        bottom: -27px;
+        z-index: 2;
+    }
+
+    .map__block-text{
+        position: absolute;
+        left: 12%;
+        bottom: 712px;
+    }
+
+    .map__block-food{
+        position: absolute;
+        left: 12%;
+        bottom: 950px;
+    }
+
+    .map__block-david{
+        position: relative;
+        bottom: 260px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+
+    .map__block-david{
+        width: 301.793px;
+        height: 206.167px;
+    }
+    
+    .david__top-black{
+        height: 72px;
+    }
+    
+    .david__content{
+        column-gap: 14px;
+        padding: 14px 142px 18px 13px;
+    }
+    
+    .david__content-img{
+        width: 41.233px;
+        height: 39.479px;
+    }
+    
+    .david__content-texts{
+        span:first-child{
+            font-size: 15px;
+        }
+    
+        span:last-child{
+            font-size: 10px;
+        }
+    }
+    
+    .container__time{
+        max-width: 274px;
+        margin: 0 auto;
+    }
+    
+    .time__text{
+        column-gap: 20px;
+        padding-top: 21px;
+
+        img{
+            width: 90px;
+            height: 90px;
+        }
+    }
+    
+    .fuul_text{
+        row-gap: 20px;
+    }
+    
+    .fuul_text-top{
+        span{
+            font-size: 8px;
+        }
+    
+        p{
+            font-size: 9px;
+            width: 108px;
+        }
+    }
+    
+    .fuul_text-bottom{
+        span{
+            font-size: 8px;
+        }
+    
+        p{
+            font-size: 9px;
+        }
+    }
+    
+    .time__button{
+        width: 87.731px;
+        height: 28.074px;
+        font-size: 10.457px;
+        padding: 6px 22px;
+    }
+}
+
